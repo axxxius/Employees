@@ -1,0 +1,32 @@
+:root {
+  --background: rgb(255, 255, 255);
+  --primaryColor: #155DA4;
+  --secondaryColor: #F2F2F2;
+  --shadowHeader: 0px 4px 8px 0px rgba(57, 113, 164, 0.25);
+  --shadowMenuSelect: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --textPrimary: #292929;
+  --textSecondary: #B0B0B0;
+}
+
+[dark] {
+  --background: rgb(41, 41, 41);
+  --primaryColor: #155DA4;
+  --secondaryColor: #3E3E3E;
+  --shadowHeader: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  --shadowMenuSelect: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --textPrimary: #F5F5F5;
+  --textSecondary: #B0B0B0;
+}
+
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

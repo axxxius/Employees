@@ -1,0 +1,29 @@
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 180px 0 150px;
+  background: var(--background);
+  box-shadow: var(--shadowHeader);
+  color: var(--textPrimary);
+}
+
+.logo {
+  padding: 25px;
+}
+
+.info_user_container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.info_user {
+  display: flex;
+  gap: 64px;
+  padding: 34.5px 51px 34.5px 34.5px;
+}
+
+.switch_theme {
+  display: flex;
+  align-items: center;
+}
