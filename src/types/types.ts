@@ -3,9 +3,9 @@ export interface EmployeeCompany {
   name: string;
   photo: string;
   phone: string;
-  gender: Gender;
-  position: Position;
-  stack: Technology;
+  gender: Gender[];
+  position: Position[];
+  stack: Technology[];
   birthdate: string;
   dateOfEmployment: string;
 }

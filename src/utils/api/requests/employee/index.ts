@@ -1,6 +1,6 @@
-import { api } from '../../instance.ts';
+import { api } from '@utils';
 
-interface FetchEmployeesParams {
+interface RequestEmployeeParams {
   page?: number;
   count?: number;
   name?: string;
@@ -9,10 +9,14 @@ interface FetchEmployeesParams {
   stack?: string;
 }
 
-export const requestEmployee = async (params: FetchEmployeesParams) => {
-  const { data } = await api.get('/Employee', {
-    params
-  });
+// export const requestEmployee = async (params: RequestEmployeeParams) => {
+//   const { data } = await api.get('/Employee', {
+//     params
+//   });
+//   console.log(data);
+//
+//   return data;
+// };
 
-  return data;
-};
+export const requestEmployee = async (params: RequestEmployeeParams) =>
+  await api.get('/Employee', { params });

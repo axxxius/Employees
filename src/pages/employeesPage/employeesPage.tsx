@@ -1,12 +1,10 @@
-import { useRequestEmployeeQuery } from '@utils';
+import EmployeeTable from './employeeTable/employeeTable.tsx';
+import cl from './employessPage.module.css';
 
 export const EmployeesPage = () => {
-  const { data } = useRequestEmployeeQuery();
-
-  console.log(data);
   return (
-    <div>
-      <div></div>
+    <div className={cl.container}>
+      <EmployeeTable />
     </div>
   );
 };

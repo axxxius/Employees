@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  height: 23px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  color: var(--textSecondary);
+}
+
+th {
+  padding: 32px 0 28px 0;
+}
+
+tr:hover {
+  background-color: var(--secondaryColor);
+}

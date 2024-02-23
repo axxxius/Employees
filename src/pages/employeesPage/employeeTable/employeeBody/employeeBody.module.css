@@ -1,0 +1,20 @@
+tbody {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 12px;
+}
+
+td {
+  height: 64px;
+  border-bottom: 1px solid var(--textSecondary);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--textPrimary);
+}
+
+.last_td {
+  text-align: right;
+}
