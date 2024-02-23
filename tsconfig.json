@@ -19,7 +19,9 @@
       "@components": ["./components/"],
       "@pages": ["./pages/"],
       "@router": ["./router"],
-      "@utils": ["./utils"]
+      "@types": ["./types"],
+      "@utils": ["./utils"],
+      "@utils/api/": ["./utils/api"]
     },
 
     /* Linting */

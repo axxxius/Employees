@@ -1,3 +1,12 @@
+import { useRequestEmployeeQuery } from '@utils';
+
 export const EmployeesPage = () => {
-  return <div></div>;
+  const { data } = useRequestEmployeeQuery();
+
+  console.log(data);
+  return (
+    <div>
+      <div></div>
+    </div>
+  );
 };
