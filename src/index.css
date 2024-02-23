@@ -6,6 +6,8 @@
   --shadowMenuSelect: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --textPrimary: #292929;
   --textSecondary: #B0B0B0;
+
+  --font-family-open-sans: 'Raleway', sans-serif;
 }
 
 [dark] {
@@ -21,6 +23,7 @@
 body {
   margin: 0;
 
+  font-family: var(--font-family-open-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

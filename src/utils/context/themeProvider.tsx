@@ -22,6 +22,12 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
     setThemeContext(theme);
   };
 
+  if (theme === 'light') {
+    document.body.setAttribute('dark', '');
+  } else {
+    document.body.removeAttribute('dark');
+  }
+
   const value = useMemo(
     () => ({
       theme,
