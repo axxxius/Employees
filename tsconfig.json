@@ -19,7 +19,6 @@
       "@components": ["./components/"],
       "@pages": ["./pages/"],
       "@router": ["./router"],
-      "@types": ["./types"],
       "@utils": ["./utils"],
       "@utils/api/": ["./utils/api"]
     },

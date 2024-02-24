@@ -1,10 +1,10 @@
-export interface EmployeeCompany {
+interface EmployeeCompany {
   id: number;
   name: string;
   photo: string;
   phone: string;
   gender: Gender[];
-  position: Position[];
+  position: Position;
   stack: Technology[];
   birthdate: string;
   dateOfEmployment: string;

@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import { Layout } from '@components';
-import { EmployeesPage } from '@pages';
+import { EmployeeProfilePage, EmployeesPage } from '@pages';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { ThemeProvider } from '@utils';
@@ -22,6 +22,10 @@ export const router = createBrowserRouter([
       {
         path: '/',
         element: <EmployeesPage />
+      },
+      {
+        path: '/Employee/:id',
+        element: <EmployeeProfilePage />
       }
     ]
   }

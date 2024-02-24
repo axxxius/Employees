@@ -3,15 +3,12 @@ tbody {
   font-weight: 400;
   line-height: 23px;
   padding: 12px;
+  cursor: pointer;
 }
 
 td {
   height: 64px;
   border-bottom: 1px solid var(--textSecondary);
-}
-
-.link {
-  text-decoration: none;
   color: var(--textPrimary);
 }
 

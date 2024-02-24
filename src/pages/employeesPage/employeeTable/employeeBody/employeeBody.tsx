@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import { Link } from 'react-router-dom';
+import { FC, Ref } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import cl from './employeeBody.module.css';
 
@@ -9,31 +9,27 @@ interface EmployeeBodyProps {
   position: string;
   phone: string;
   birthdate: string;
+  innerRef?: Ref<HTMLTableSectionElement>;
 }
 
-export const EmployeeBody: FC<EmployeeBodyProps> = ({ id, name, position, phone, birthdate }) => (
-  <tbody className={cl.tbody}>
-    <tr>
-      <td>
-        <Link className={cl.link} to={`/Employee/${id}`}>
-          {name}
-        </Link>
-      </td>
-      <td>
-        <Link className={cl.link} to={`/Employee/${id}`}>
-          {position}
-        </Link>
-      </td>
-      <td>
-        <Link className={cl.link} to={`/Employee/${id}`}>
-          {phone}
-        </Link>
-      </td>
-      <td className={cl.last_td}>
-        <Link className={cl.link} to={`/Employee/${id}`}>
-          {birthdate}
-        </Link>
-      </td>
-    </tr>
-  </tbody>
-);
+export const EmployeeBody: FC<EmployeeBodyProps> = ({
+  innerRef,
+  id,
+  name,
+  position,
+  phone,
+  birthdate
+}) => {
+  const navigate = useNavigate();
+
+  return (
+    <tbody ref={innerRef} className={cl.tbody} onClick={() => navigate(`/Employee/${id}`)}>
+      <tr>
+        <td>{name}</td>
+        <td>{position}</td>
+        <td>{phone}</td>
+        <td className={cl.last_td}>{birthdate}</td>
+      </tr>
+    </tbody>
+  );
+};

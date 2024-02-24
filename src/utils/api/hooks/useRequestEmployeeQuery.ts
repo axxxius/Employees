@@ -3,7 +3,7 @@ import { requestEmployee } from '@utils';
 
 const EMPLOYEE_COUNT = 10;
 
-export const useRequestEmployeeQuery = (params) =>
+export const useRequestEmployeeQuery = (params: EmployeeParams) =>
   useInfiniteQuery({
     queryKey: ['employees', params],
     queryFn: ({ pageParam }) =>
