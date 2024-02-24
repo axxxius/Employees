@@ -3,3 +3,21 @@
   flex-direction: column;
   padding: 0 180px;
 }
+
+.title_page {
+  color: var(--textPrimary)
+}
+
+.select_container {
+  color: var(--textPrimary);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 28px;
+}
+
+.select_list {
+  display: flex;
+  gap: 10px;
+}
+

@@ -4,11 +4,12 @@ import logo from '@assets/icons/logo.svg';
 
 import { SwitchTheme } from './switchTheme/switchTheme.tsx';
 import cl from './header.module.css';
+import { ROUTES } from '@utils';
 
 export const Header = () => (
   <div className={cl.header}>
     <div>
-      <Link to='/'>
+      <Link to={ROUTES.MAIN}>
         <img className={cl.logo} src={logo} alt='logo' />
       </Link>
     </div>

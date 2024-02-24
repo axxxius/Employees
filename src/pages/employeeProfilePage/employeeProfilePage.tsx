@@ -11,7 +11,7 @@ export const EmployeeProfilePage = () => {
 
   return (
     <div className={cl.container}>
-      <BreadCrumbs id={data?.id} name={data?.name} />
+      <BreadCrumbs name={data?.name} />
 
       <div className={cl.profile_container}>
         <div className={cl.employeee_info_container}>

@@ -9,6 +9,9 @@
   --lineColor: rgb(242, 242, 242);
 
   --font-family-open-sans: 'Raleway', sans-serif;
+
+  --checkbox: url('./assets/icons/checkbox.svg');
+  --emptyCheckbox: url('./assets/icons/empty-checkbox.svg')
 }
 
 [dark] {
