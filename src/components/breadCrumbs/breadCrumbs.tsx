@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import arrowRight from '@assets/images/icons/arrow-right.svg';
+import arrowRight from '@assets/icons/arrow-right.svg';
 
 import cl from './breadCrumbs.module.css';
 

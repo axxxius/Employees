@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import logo from '@assets/images/icons/logo.svg';
+import logo from '@assets/icons/logo.svg';
 
 import { SwitchTheme } from './switchTheme/switchTheme.tsx';
 import cl from './header.module.css';

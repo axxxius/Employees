@@ -15,7 +15,3 @@ thead {
 th {
   padding: 32px 0 28px 0;
 }
-
-tr:hover {
-  background-color: var(--secondaryColor);
-}

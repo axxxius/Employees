@@ -6,6 +6,7 @@
   --shadowMenuSelect: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --textPrimary: #292929;
   --textSecondary: #B0B0B0;
+  --lineColor: rgb(242, 242, 242);
 
   --font-family-open-sans: 'Raleway', sans-serif;
 }
@@ -18,6 +19,7 @@
   --shadowMenuSelect: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --textPrimary: #F5F5F5;
   --textSecondary: #B0B0B0;
+  --lineColor: rgb(62, 62, 62);
 }
 
 body {

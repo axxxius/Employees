@@ -1,3 +1,89 @@
 .container {
   padding: 0 180px;
 }
+
+.profile_container {
+  height: 163px;
+}
+
+.employeee_info_container {
+  display: flex;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  padding-bottom: 16px;
+  color: var(--textPrimary);
+}
+
+.position {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-bottom: 34px;
+  color: var(--textPrimary);
+}
+
+.employee_image_container {
+  padding-right: 31px;
+}
+
+.employees_image {
+  width: 163px;
+  height: 163px;
+  border-radius: 50%;
+}
+
+.ul_profile {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.profile_element {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--secondaryColor);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--textPrimary);
+}
+
+.con {
+  background-color: var(--background);
+  width: 100%;
+}
+
+.line {
+  border: 1px solid var(--lineColor);
+  margin: 40px 0 40px 0;
+}
+
+.detailed_info_container {
+  background-color: var(--background);
+  width: 478px;
+}
+
+.basic_information {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  padding-bottom: 32px;
+  color: var(--textPrimary);
+}
+
+.detailed_info {
+  display: flex;
+  justify-content: space-between;
+  color: var(--textPrimary);
+  padding-bottom: 24px;
+}
+
+.paragraph {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}

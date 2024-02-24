@@ -6,6 +6,10 @@ tbody {
   cursor: pointer;
 }
 
+tbody:hover {
+  background-color: var(--secondaryColor);
+}
+
 td {
   height: 64px;
   border-bottom: 1px solid var(--textSecondary);

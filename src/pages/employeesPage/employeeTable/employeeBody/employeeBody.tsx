@@ -4,12 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import cl from './employeeBody.module.css';
 
 interface EmployeeBodyProps {
+  innerRef?: Ref<HTMLTableSectionElement>;
   id: number;
   name: string;
   position: string;
   phone: string;
   birthdate: string;
-  innerRef?: Ref<HTMLTableSectionElement>;
 }
 
 export const EmployeeBody: FC<EmployeeBodyProps> = ({

@@ -1,5 +1,5 @@
-import moon from '@assets/images/icons/moon.svg';
-import sun from '@assets/images/icons/sun.svg';
+import moon from '@assets/icons/moon.svg';
+import sun from '@assets/icons/sun.svg';
 import { useTheme } from '@utils';
 
 import cl from './switchTheme.module.css';

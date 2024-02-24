@@ -1,2 +1,2 @@
 export * from './useRequestEmployeeQuery';
-export * from './useRequestEmployeeQueryById.ts';
+export * from './useRequestEmployeeQueryById';

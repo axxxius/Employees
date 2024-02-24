@@ -1,8 +1,7 @@
 .bread_crumbs {
-  margin-top: 28px;
+  padding: 28px 0;
   display: flex;
   gap: 20px;
-  background: var(--background);
 }
 
 .nav_link {
