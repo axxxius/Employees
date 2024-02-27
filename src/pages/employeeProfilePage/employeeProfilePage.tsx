@@ -10,7 +10,7 @@ export const EmployeeProfilePage = () => {
   const { data } = useRequestEmployeeQueryById({ id });
 
   return (
-    <div className={cl.container}>
+    <div>
       <BreadCrumbs name={data?.name} />
 
       <div className={cl.profile_container}>

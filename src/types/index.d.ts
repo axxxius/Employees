@@ -3,7 +3,7 @@ interface EmployeeCompany {
   name: string;
   photo: string;
   phone: string;
-  gender: Gender[];
+  gender: Gender;
   position: Position;
   stack: Technology[];
   birthdate: string;

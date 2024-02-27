@@ -1,4 +1,4 @@
-export const POSITIONS = [
+export const POSITION = [
   { label: 'Backend-разработчик', value: 'Backend' },
   { label: 'Frontend-разработчик', value: 'Frontend' },
   { label: 'Аналитик', value: 'Analyst' },
@@ -7,7 +7,7 @@ export const POSITIONS = [
   { label: 'Fullstack', value: 'Fullstack' }
 ];
 
-export const GENDERS = [
+export const GENDER = [
   { label: 'Мужчина', value: 'Male' },
   { label: 'Женщина', value: 'Female' }
 ];

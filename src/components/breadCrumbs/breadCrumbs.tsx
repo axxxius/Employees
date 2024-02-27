@@ -2,9 +2,9 @@ import { FC } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import arrowRight from '@assets/icons/arrow-right.svg';
+import { ROUTES } from '@utils';
 
 import cl from './breadCrumbs.module.css';
-import { ROUTES } from '@utils';
 
 interface BreadCrumbsProps {
   name?: string;
