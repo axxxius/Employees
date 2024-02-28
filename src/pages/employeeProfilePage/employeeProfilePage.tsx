@@ -4,10 +4,13 @@ import { BreadCrumbs } from '@components';
 import { useRequestEmployeeQueryById } from '@utils';
 
 import cl from './employeeProfilePage.module.css';
+import { Spinner } from '../../components/spinner/spinner.tsx';
 
 export const EmployeeProfilePage = () => {
   const { id } = useParams();
-  const { data } = useRequestEmployeeQueryById({ id });
+  const { data, isLoading } = useRequestEmployeeQueryById({ id });
+
+  if (isLoading || !data) return <Spinner />;
 
   return (
     <div>

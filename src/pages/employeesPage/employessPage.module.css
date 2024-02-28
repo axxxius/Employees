@@ -37,26 +37,12 @@
   justify-content: space-between;
 }
 
-.selected_filters {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
 .title_filters {
   color: rgb(245, 245, 245);
   font-size: 20px;
   font-weight: 500;
   line-height: 23px;
 }
-
-.selected_items {
-  height: 39px;
-  padding: 10px;
-  background-color: var(--background);
-  border-radius: 5px;
-}
-
 
 .search_button {
   height: 45px;

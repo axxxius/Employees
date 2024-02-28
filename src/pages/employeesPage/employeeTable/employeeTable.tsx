@@ -1,14 +1,11 @@
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-import { useRequestEmployeeQuery } from '@utils';
-
 import { EmployeeBody } from './employeeBody/employeeBody.tsx';
 import cl from './employeeTable.module.css';
 
-export const EmployeeTable = ({ filters }) => {
+export const EmployeeTable = ({ data, fetchNextPage }) => {
   const { ref, inView } = useInView();
-  const { data, fetchNextPage } = useRequestEmployeeQuery(filters);
 
   useEffect(() => {
     if (inView) {

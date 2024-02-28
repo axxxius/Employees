@@ -1,0 +1,45 @@
+.spinner_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.spinner {
+  background: conic-gradient(var(--background), var(--primaryColor));
+  position: relative;
+  border-radius: 50%;
+  animation: rotation 3s linear infinite;
+  width: 100px;
+  height: 100px;
+}
+
+.spinner:before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: var(--background);
+  border-radius: 50%;
+  top: 10%;
+  left: 10%;
+}
+
+.spinner:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--primaryColor);
+  right: 45%;
+  width: 10px;
+  height: 10px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
