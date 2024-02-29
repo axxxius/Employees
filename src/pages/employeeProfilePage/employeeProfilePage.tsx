@@ -1,10 +1,9 @@
 import { useParams } from 'react-router-dom';
 
-import { BreadCrumbs } from '@components';
+import { BreadCrumbs, Spinner } from '@components';
 import { useRequestEmployeeQueryById } from '@utils';
 
 import cl from './employeeProfilePage.module.css';
-import { Spinner } from '../../components/spinner/spinner.tsx';
 
 export const EmployeeProfilePage = () => {
   const { id } = useParams();

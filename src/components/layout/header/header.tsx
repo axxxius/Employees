@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
 import logo from '@assets/icons/logo.svg';
+import { ROUTES } from '@utils';
 
 import { SwitchTheme } from './switchTheme/switchTheme.tsx';
 import cl from './header.module.css';
-import { ROUTES } from '@utils';
 
 export const Header = () => (
   <div className={cl.header}>

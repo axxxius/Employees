@@ -14,7 +14,7 @@ export const EmployeeTable = ({ data, fetchNextPage }) => {
   }, [inView]);
 
   return (
-    <div style={{ padding: '0 180px' }}>
+    <div className={cl.container}>
       <table className={cl.table}>
         <thead>
           <tr>
@@ -25,7 +25,7 @@ export const EmployeeTable = ({ data, fetchNextPage }) => {
           </tr>
         </thead>
         {data?.pages.map((page) =>
-          page.data.map((employee: EmployeeCompany) => (
+          page.data.map((employee) => (
             <EmployeeBody
               innerRef={ref}
               key={employee.id}

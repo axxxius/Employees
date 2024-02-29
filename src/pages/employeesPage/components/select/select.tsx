@@ -13,31 +13,20 @@ interface Option {
 interface SelectProps {
   label: string;
   options: Option[];
-  onChange: (selectedValues: string | string[]) => void;
-  multi?: boolean;
+  onChange: (selectedValue: string) => void;
 }
 
-export const Select: FC<SelectProps> = ({ label, options, onChange, multi = false }) => {
+export const Select: FC<SelectProps> = ({ label, options, onChange }) => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [selectedValues, setSelectedValues] = useState<string[] | null>(null);
+  const [selectedValue, setSelectedValue] = useState<string | null>(null);
   const ref = useRef<HTMLDivElement>(null);
 
   useOnClickOutside(ref, () => {
     setOpenMenu(false);
   });
 
-  const handeleOptionClick = (value: string) => {
-    if (multi) {
-      setSelectedValues((prevValues) => {
-        if (prevValues?.includes(value)) {
-          return prevValues.filter((v) => v !== value);
-        } else {
-          return [...(prevValues || []), value];
-        }
-      });
-    } else {
-      setSelectedValues(value);
-    }
+  const handleOptionClick = (value: string) => {
+    setSelectedValue(value);
     onChange(value);
   };
 
@@ -62,11 +51,9 @@ export const Select: FC<SelectProps> = ({ label, options, onChange, multi = fals
               <input
                 id={option.value}
                 className={cl.check_input}
-                type={multi ? 'checkbox' : 'radio'}
-                checked={
-                  multi ? selectedValues?.includes(option.value) : selectedValues === option.value
-                }
-                onChange={() => handeleOptionClick(option.value)}
+                type='radio'
+                checked={selectedValue === option.value}
+                onChange={() => handleOptionClick(option.value)}
                 readOnly
               />
             </li>

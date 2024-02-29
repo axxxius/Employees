@@ -15,10 +15,8 @@
   margin-bottom: 28px;
 }
 
-.search_input .search_input_container :active {
-  outline: none;
-}
-
-.search_input:hover .search_input_container {
+.search_input:hover,
+.search_input:active,
+.search_input:focus {
   outline: none;
 }

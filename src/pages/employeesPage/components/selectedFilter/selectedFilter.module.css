@@ -1,5 +1,6 @@
 .cancel {
   margin-right: 10px;
+  color: var(--textPrimary)
 }
 
 .selected_filters {
