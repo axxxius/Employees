@@ -8,7 +8,7 @@ import cl from './header.module.css';
 
 export const Header = () => (
   <div className={cl.header}>
-    <div>
+    <div className={cl.logo_container}>
       <Link to={ROUTES.MAIN}>
         <img className={cl.logo} src={logo} alt='logo' />
       </Link>

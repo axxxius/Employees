@@ -19,13 +19,13 @@ interface SelectedFilters {
 export const EmployeesPage: FC = () => {
   const [value, setValue] = useState('');
   const [selectedFilters, setSelectedFilters] = useState<SelectedFilters>({});
-  const [searchParams, setSearchParams] = useState<SelectedFilters>({});
+  const [params, setParams] = useState<SelectedFilters>({});
 
-  const { data, fetchNextPage, isLoading } = useRequestEmployeeQuery(searchParams);
+  const { data, fetchNextPage, isLoading } = useRequestEmployeeQuery(params);
 
   const handleSearch = (e: FormEvent) => {
     e.preventDefault();
-    setSearchParams({ ...selectedFilters, name: value });
+    setParams({ ...selectedFilters, name: value });
   };
 
   const handleFilterRemove = (filterKey: string) => {
@@ -65,7 +65,7 @@ export const EmployeesPage: FC = () => {
             />
           </div>
         </div>
-        <EmployeeSearch setValue={setValue} handleSearch={handleSearch} />
+        <EmployeeSearch className={cl.search} setValue={setValue} handleSearch={handleSearch} />
         <div className={cl.filters_container}>
           <div className={cl.filters}>
             <SelectedFilter selectedFilters={selectedFilters} onFilterRemove={handleFilterRemove} />

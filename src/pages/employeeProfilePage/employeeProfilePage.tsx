@@ -16,7 +16,7 @@ export const EmployeeProfilePage = () => {
       <BreadCrumbs name={data?.name} />
 
       <div className={cl.profile_container}>
-        <div className={cl.employeee_info_container}>
+        <div className={cl.employee_info_container}>
           <div className={cl.employee_image_container}>
             <img className={cl.employees_image} src={data?.photo} alt='userImage' />
           </div>
@@ -32,10 +32,8 @@ export const EmployeeProfilePage = () => {
             </ul>
           </div>
         </div>
-
+        <div className={cl.line}></div>
         <div className={cl.con}>
-          <div className={cl.line}></div>
-
           <div className={cl.detailed_info_container}>
             <h3 className={cl.basic_information}>Основная страница</h3>
             <div>

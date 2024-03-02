@@ -10,28 +10,29 @@ interface SelectedFilters {
   [key: string]: string;
 }
 
-interface Props {
+interface SelectedFilterProps {
   selectedFilters: SelectedFilters;
   onFilterRemove: (filterKey: string) => void;
 }
 
-export const SelectedFilter: FC<Props> = ({ selectedFilters, onFilterRemove }) => {
+export const SelectedFilter: FC<SelectedFilterProps> = ({ selectedFilters, onFilterRemove }) => {
   const { theme } = useTheme();
 
   return (
     <div className={cl.selected_filters}>
-      <p className={cl.title_filtes}>Выбранные фильтры:</p>
-      {Object.keys(selectedFilters).map((key) => (
-        <div className={cl.selected_items} key={key}>
-          <img
-            className={cl.cancel}
-            src={theme === 'light' ? closeWhite : closeBlack}
-            alt='cancel'
-            onClick={() => onFilterRemove(key)}
-          />
-          <span>{`${selectedFilters[key]}`}</span>
-        </div>
-      ))}
+      <p className={cl.title_filters}>Выбранные фильтры:</p>
+      <div className={cl.container}>
+        {Object.keys(selectedFilters).map((key) => (
+          <div onClick={() => onFilterRemove(key)} className={cl.selected_items} key={key}>
+            <img
+              className={cl.cancel}
+              src={theme === 'light' ? closeWhite : closeBlack}
+              alt='cancel'
+            />
+            <span>{`${selectedFilters[key]}`}</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,10 +1,12 @@
 .container {
   padding: 0 180px;
+  overflow-x: auto;
 }
 
 .table {
   width: 100%;
   border-collapse: collapse;
+  white-space: nowrap;
 }
 
 thead {
@@ -22,4 +24,16 @@ th {
 
 .last_cell {
   text-align: right;
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  thead {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+  }
 }

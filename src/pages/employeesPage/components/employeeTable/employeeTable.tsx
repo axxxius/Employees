@@ -1,17 +1,38 @@
-import { useEffect } from 'react';
+import { FC, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 import { EmployeeBody } from './employeeBody/employeeBody.tsx';
 import cl from './employeeTable.module.css';
 
-export const EmployeeTable = ({ data, fetchNextPage }) => {
+interface EmployeeTable {
+  id: number;
+  name: string;
+  position: string;
+  phone: string;
+  birthdate: string;
+}
+
+interface Page {
+  data: EmployeeTable[];
+}
+
+interface Pages {
+  pages: Page[];
+}
+
+interface EmployeeTableProps {
+  data: Pages | null;
+  fetchNextPage: () => void;
+}
+
+export const EmployeeTable: FC<EmployeeTableProps> = ({ data, fetchNextPage }) => {
   const { ref, inView } = useInView();
 
   useEffect(() => {
     if (inView) {
       fetchNextPage();
     }
-  }, [inView]);
+  }, [inView, fetchNextPage]);
 
   return (
     <div className={cl.container}>

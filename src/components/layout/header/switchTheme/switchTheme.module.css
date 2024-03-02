@@ -27,12 +27,11 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .sun {
   position: absolute;
-  margin-top: 0;
 }
 
 .moon{
@@ -61,4 +60,26 @@
 
 .toggle_checkbox[type=checkbox]:checked + .toggle_container label .circle .moon{
   margin-top: 0;
+}
+
+@media (max-width: 320px) {
+  .label {
+    width: 47px;
+    height: 22px;
+  }
+
+  .circle {
+    width: 17px;
+    height: 17px;
+  }
+
+  .sun {
+    width: 11px;
+    height: 11px;
+  }
+
+  .moon {
+    width: 11px;
+    height: 11px;
+  }
 }

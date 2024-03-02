@@ -54,7 +54,6 @@ export const Select: FC<SelectProps> = ({ label, options, onChange }) => {
                 type='radio'
                 checked={selectedValue === option.value}
                 onChange={() => handleOptionClick(option.value)}
-                readOnly
               />
             </li>
           ))}
