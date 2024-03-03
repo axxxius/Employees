@@ -38,8 +38,8 @@ export const EmployeeProfilePage = () => {
             <h3 className={cl.basic_information}>Основная страница</h3>
             <div>
               <div className={cl.detailed_info}>
-                <p>Контактный телефон:</p>
-                <p>{data?.phone}</p>
+                <p className={cl.paragraph}>Контактный телефон:</p>
+                <p className={cl.paragraph}>{data?.phone}</p>
               </div>
               <div className={cl.detailed_info}>
                 <p className={cl.paragraph}>Дата рождения:</p>

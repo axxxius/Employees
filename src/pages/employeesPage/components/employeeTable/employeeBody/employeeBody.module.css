@@ -5,6 +5,21 @@ tbody {
   padding: 12px;
   cursor: pointer;
 }
+@media (max-width: 480px) {
+  tbody {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+@media (max-width: 350px) {
+  tbody {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+}
+
 
 tbody:hover {
   background-color: var(--secondaryColor);
@@ -14,17 +29,31 @@ td {
   height: 64px;
   border-bottom: 1px solid var(--textSecondary);
   color: var(--textPrimary);
+  padding-right: 15px;
 }
+@media (max-width: 480px) {
+  td {
+    padding-right: 15px;
+  }
+}
+@media (max-width: 350px) {
+  td {
+    padding-right: 15px;
+  }
+}
+
 
 .last_td {
   text-align: right;
+  padding-right: 0;
 }
-
-
-@media (max-width: 320px) {
-  tbody {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
+@media (max-width: 480px) {
+  .last_td {
+    padding-right: 0
+  }
+}
+@media (max-width: 350px) {
+  .last_td {
+    padding-right: 0;
   }
 }

@@ -9,10 +9,17 @@
   height: 26px;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   position: relative;
   background-color: var(--primaryColor);
 }
+@media (max-width: 350px) {
+  .label {
+    width: 47px;
+    height: 22px;
+  }
+}
+
 
 .circle {
   width: 20px;
@@ -29,15 +36,36 @@
   overflow: hidden;
   transition: 0.3s;
 }
+@media (max-width: 350px) {
+  .circle {
+    width: 17px;
+    height: 17px;
+  }
+}
+
 
 .sun {
   position: absolute;
 }
+@media (max-width: 350px) {
+  .sun {
+    width: 11px;
+    height: 11px;
+  }
+}
+
 
 .moon{
   position: absolute;
   margin-top: -200%;
 }
+@media (max-width: 350px) {
+  .moon {
+    width: 11px;
+    height: 11px;
+  }
+}
+
 
 .toggle_checkbox {
   display: none;
@@ -60,26 +88,4 @@
 
 .toggle_checkbox[type=checkbox]:checked + .toggle_container label .circle .moon{
   margin-top: 0;
-}
-
-@media (max-width: 320px) {
-  .label {
-    width: 47px;
-    height: 22px;
-  }
-
-  .circle {
-    width: 17px;
-    height: 17px;
-  }
-
-  .sun {
-    width: 11px;
-    height: 11px;
-  }
-
-  .moon {
-    width: 11px;
-    height: 11px;
-  }
 }

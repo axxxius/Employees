@@ -4,17 +4,43 @@
   position: relative;
   padding-left: 32px;
 }
+@media (max-width: 480px) {
+  .container {
+    padding-left: 0;
+    position: static;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    padding-left: 0;
+    position: static;
+  }
+}
 
 .title {
   display: flex;
   gap: 12px;
 }
 
+
 .option {
   display: flex;
   gap: 12px;
   cursor: pointer;
 }
+@media (max-width: 480px) {
+  .option {
+    align-items: center;
+    gap: 8px;
+  }
+}
+@media (max-width: 350px) {
+  .option {
+    align-items: center;
+    gap: 8px;
+  }
+}
+
 
 .label{
   color: var(--primaryColor);
@@ -25,11 +51,38 @@
   transform: rotate(180deg);
   transition: 0.3s;
 }
+@media (max-width: 480px) {
+  .arrow_top {
+    width: 15px;
+    height: 8px;
+  }
+}
+@media (max-width: 350px) {
+  .arrow_top {
+    width: 12px;
+    height: 5px;
+  }
+}
+
 
 .arrow_bottom {
   transform: rotate(0deg);
   transition: 0.3s;
 }
+
+@media (max-width: 480px) {
+  .arrow_bottom {
+    width: 15px;
+    height: 8px;
+  }
+}
+@media (max-width: 350px) {
+  .arrow_bottom {
+    width: 12px;
+    height: 5px;
+  }
+}
+
 
 label {
   cursor: pointer;
@@ -53,6 +106,23 @@ label {
   visibility: hidden;
   transition: 0.3s;
 }
+@media (max-width: 480px) {
+  .menu {
+    width: 254px;
+    height: 215px;
+    left: 44px;
+    top: 275px;
+  }
+}
+@media (max-width: 350px) {
+  .menu {
+    width: 224px;
+    height: 215px;
+    left: 24px;
+    top: 215px;
+  }
+}
+
 
 .menu_element {
   margin-bottom: 13px;
@@ -64,6 +134,23 @@ label {
   font-weight: 400;
   line-height: 19px;
 }
+@media (max-width: 480px) {
+  .menu_element {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 350px) {
+  .menu_element {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 12px;
+  }
+}
+
 
 .check_input {
   -webkit-appearance: none;
@@ -84,41 +171,4 @@ label {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
-}
-
-@media (max-width: 320px) {
-  .container {
-    padding-left: 0;
-    position: static;
-  }
-
-  .option {
-    align-items: center;
-    gap: 8px;
-  }
-
-  .arrow_top {
-    width: 12px;
-    height: 5px;
-  }
-
-  .arrow_bottom {
-    width: 12px;
-    height: 5px;
-  }
-
-  .menu {
-    z-index: 1;
-    width: 224px;
-    height: 215px;
-    left: 24px;
-    top: 215px;
-  }
-
-  .menu_element {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 14px;
-    margin-bottom: 12px;
-  }
 }

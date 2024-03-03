@@ -2,6 +2,19 @@
   height: 163px;
   padding: 0 180px;
 }
+@media (max-width: 480px) {
+  .profile_container {
+    padding: 0 44px;
+    margin-top: 16px;
+  }
+}
+@media (max-width: 350px) {
+  .profile_container {
+    padding: 0 24px;
+    margin-top: 12px;
+  }
+}
+
 
 .employee_info_container {
   margin-bottom: 12px;
@@ -15,6 +28,23 @@
   margin-bottom: 16px;
   color: var(--textPrimary);
 }
+@media (max-width: 480px) {
+  .name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 350px) {
+  .name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-bottom: 8px;
+  }
+}
+
 
 .position {
   font-size: 24px;
@@ -23,24 +53,75 @@
   padding-bottom: 34px;
   color: var(--textPrimary);
 }
+@media (max-width: 480px) {
+  .position {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-bottom: 12px;
+    overflow-wrap: break-word;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 350px) {
+  .position {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding-bottom: 12px;
+    overflow-wrap: break-word;
+    white-space: nowrap;
+  }
+}
+
 
 .employee_image_container {
   padding-right: 31px;
   display: flex;
   gap: 42px;
 }
+@media (max-width: 480px) {
+  .employee_image_container {
+    padding-right: 16px;
+  }
+}
+@media (max-width: 350px) {
+  .employee_image_container {
+    padding-right: 12px;
+  }
+}
+
 
 .employees_image {
   width: 163px;
   height: 163px;
   border-radius: 50%;
 }
+@media (max-width: 480px) {
+  .employees_image {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 350px) {
+  .employees_image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 
 .ul_profile {
   list-style: none;
   display: flex;
   gap: 16px;
 }
+@media (max-width: 350px) {
+  .ul_profile {
+    gap: 8px;
+  }
+}
+
 
 .profile_element {
   padding: 10px;
@@ -67,6 +148,13 @@
   background-color: var(--background);
   width: 478px;
 }
+@media (max-width: 350px) {
+  .detailed_info_container {
+    width: 100%;
+    white-space: nowrap;
+  }
+}
+
 
 .basic_information {
   font-size: 32px;
@@ -75,6 +163,21 @@
   padding-bottom: 32px;
   color: var(--textPrimary);
 }
+@media (max-width: 480px) {
+  .basic_information {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+  }
+}
+@media (max-width: 350px) {
+  .basic_information {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+}
+
 
 .detailed_info {
   display: flex;
@@ -82,73 +185,48 @@
   color: var(--textPrimary);
   padding-bottom: 24px;
 }
-
-.paragraph {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 28px;
-}
-
-@media (max-width: 320px) {
-  .profile_container {
-    padding: 0 24px;
-    margin-top: 12px;
-  }
-
-  .employees_image {
-    width: 100px;
-    height: 100px;
-  }
-
-  .name {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 23px;
-    margin-bottom: 8px;
-  }
-
-  .position {
+@media (max-width: 480px) {
+  .detailed_info {
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
-    padding-bottom: 12px;
-    overflow-wrap: break-word;
-    white-space: nowrap;
+    justify-content: flex-start;
+    gap: 12px;
   }
-
-  .ul_profile {
-    gap: 8px;
-  }
-
-  .line {
-    margin: 20px 0 40px 0;
-  }
-
-  .employee_image_container {
-    padding-right: 12px;
-  }
-
-  .basic_information {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19px;
-  }
-
+}
+@media (max-width: 350px) {
   .detailed_info {
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
     gap: 12px;
   }
+}
 
+
+.paragraph {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+@media (max-width: 480px) {
+  .paragraph {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+}
+@media (max-width: 350px) {
   .paragraph {
     font-size: 14px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 20px;
   }
+}
 
-  .detailed_info_container {
-    width: 100%;
-    white-space: nowrap;
+
+@media (max-width: 350px) {
+  .line {
+    margin: 20px 0 40px 0;
   }
 }

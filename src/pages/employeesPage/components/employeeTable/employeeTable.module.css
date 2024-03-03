@@ -2,6 +2,17 @@
   padding: 0 180px;
   overflow-x: auto;
 }
+@media (max-width: 480px) {
+  .container {
+    padding: 0 44px;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
 
 .table {
   width: 100%;
@@ -17,6 +28,21 @@ thead {
   line-height: 23px;
   color: var(--textSecondary);
 }
+@media (max-width: 480px) {
+  thead {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+}
+@media (max-width: 350px) {
+  thead {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+}
+
 
 th {
   padding: 32px 0 28px 0;
@@ -26,14 +52,3 @@ th {
   text-align: right;
 }
 
-@media (max-width: 320px) {
-  .container {
-    padding: 0 24px;
-  }
-
-  thead {
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 12px;
-  }
-}
