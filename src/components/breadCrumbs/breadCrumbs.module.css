@@ -2,17 +2,16 @@
   display: flex;
   gap: 20px;
   padding: 28px 180px;
+  white-space: nowrap;
 }
 @media (max-width: 480px) {
   .bread_crumbs {
     padding: 20px 44px;
-    white-space: nowrap;
   }
 }
 @media (max-width: 350px) {
   .bread_crumbs {
     padding: 15px 24px;
-    white-space: nowrap;
   }
 }
 

@@ -82,13 +82,11 @@
 @media (max-width: 480px) {
   .filters_container {
     justify-content: center;
-    flex-wrap: wrap;
   }
 }
 @media (max-width: 350px) {
   .filters_container {
     justify-content: center;
-    flex-wrap: wrap;
   }
 }
 
