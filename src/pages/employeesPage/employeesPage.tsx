@@ -32,6 +32,7 @@ export const EmployeesPage: FC = () => {
     const updatedFilters = { ...selectedFilters };
     delete updatedFilters[filterKey];
     setSelectedFilters(updatedFilters);
+    setParams(updatedFilters)
   };
 
   return (
