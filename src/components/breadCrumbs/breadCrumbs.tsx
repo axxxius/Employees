@@ -10,21 +10,19 @@ interface BreadCrumbsProps {
   name?: string;
 }
 
-export const BreadCrumbs: FC<BreadCrumbsProps> = ({ name }) => {
-  return (
-    <div className={cl.bread_crumbs}>
-      <Link className={cl.nav_link} to={ROUTES.MAIN}>
-        Главная
-        <img className={cl.arrow_right} src={arrowRight} alt='arrowRight' />
-        Список cотрудников
-      </Link>
+export const BreadCrumbs: FC<BreadCrumbsProps> = ({ name }) => (
+  <div className={cl.bread_crumbs}>
+    <Link className={cl.nav_link} to={ROUTES.MAIN}>
+      Главная
+      <img className={cl.arrow_right} src={arrowRight} alt='arrowRight' />
+      Список cотрудников
+    </Link>
 
-      {name && (
-        <div className={cl.container}>
-          <img className={cl.arrow_right} src={arrowRight} alt='arrowRight' />
-          <p className={cl.nav_link}>{name}</p>
-        </div>
-      )}
-    </div>
-  );
-};
+    {name && (
+      <div className={cl.container}>
+        <img className={cl.arrow_right} src={arrowRight} alt='arrowRight' />
+        <p className={cl.nav_link}>{name}</p>
+      </div>
+    )}
+  </div>
+);
